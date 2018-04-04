@@ -1,7 +1,7 @@
 {
   "root": true,
-  "extends": [
-    "plugin:vue/essential",
-    "@vue/prettier"
-  ]
+  "extends": ["plugin:vue/essential"],
+  "rules": {
+    "semi": ["error", "never"]
+  }
 }
