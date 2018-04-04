@@ -2,8 +2,8 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 
-import './plugins/parallax'
-import './plugins/tilt'
+import parallaxDirective from './plugins/parallax'
+import tiltDirective from './plugins/tilt'
 
 import './registerServiceWorker'
 

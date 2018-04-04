@@ -1,31 +1,189 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
+    <hero />
     <router-view/>
+    <site-footer />
   </div>
 </template>
 
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
+<script>
+import hero from '@/components/Hero'
+import siteFooter from '@/components/SiteFooter'
+
+export default {
+  components: {
+    hero,
+    siteFooter
+  }
+}
+</script>
+
+<style lang="scss">
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+ul,
+li,
+p {
+  font-weight: 500;
+}
+
+html {
+  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+    sans-serif;
+  font-size: 16px;
+  word-spacing: 1px;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-#nav {
-  padding: 30px;
+  -webkit-font-smoothing: antialiased;
+  color: #48435e;
 }
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
+body {
+  background-color: #ad4444;
+  width: 100%;
+  overflow-x: hidden;
 }
 
-#nav a.router-link-exact-active {
-  color: #42b983;
+a {
+  color: #ad4444;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.u-title {
+  color: #48435e;
+  white-space: nowrap;
+}
+
+.u-display-1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.c-section {
+  padding: 4rem;
+  font-size: 1.2rem;
+  position: relative;
+  overflow: hidden;
+  color: #48435e;
+  background-position: center right;
+  background-color: #fcfcfc;
+
+  @media (max-width: 900px) {
+    padding: 2rem;
+  }
+
+  > p,
+  ul,
+  ol {
+    line-height: 1.4;
+    max-width: 700px;
+    &:not(:last-child) {
+      margin-bottom: 1.4rem;
+    }
+  }
+
+  a {
+    font-weight: 700;
+  }
+}
+
+.c-section--small {
+  padding: 1rem;
+}
+
+.c-section__bg-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  background: url('./assets/img/flowers.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: opacity 0.3s ease-in;
+
+  @media (max-width: 600px) {
+    opacity: 0.25;
+  }
+}
+
+.u-bg--primary {
+  background-color: #ad4444;
+  color: #fcfcfc;
+
+  a {
+    color: #ad4444;
+  }
+
+  &::selection {
+    background-color: #48435e;
+    color: #fff;
+  }
+}
+
+.u-bg--accent {
+  background-color: #48435e;
+  color: #fcfcfc;
+
+  a {
+    text-shadow: 0 0 1px #252235;
+  }
+}
+
+.page-enter-active,
+.page-leave-active {
+  background-color: #48435e;
+
+  &,
+  & * {
+    transition: all 0.5s;
+  }
+}
+
+.page-enter,
+.page-leave-to {
+  * {
+    opacity: 0;
+  }
+}
+
+.c-page-content {
+  z-index: 200;
+  position: relative;
+}
+
+.c-btn {
+  background-color: #48435e;
+  color: #fff;
+  cursor: pointer;
+
+  @media (max-width: 463px) {
+    width: 100%;
+  }
+}
+
+::selection {
+  background-color: #ad4444;
+  color: #fff;
+}
+
+.u-hide {
+  @media (max-width: 900px) {
+    display: none;
+  }
+}
+
+.u-hide--xs {
+  @media (max-width: 480px) {
+    display: none;
+  }
 }
 </style>
