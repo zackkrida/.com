@@ -1,19 +1,31 @@
 <template>
   <div id="app">
     <hero />
-    <router-view/>
+
+      <main class="c-page-content" v-parallax="-4">
+        <transition name="page">
+          <router-view />
+        </transition>
+      </main>
+
+    <signup />
+    <hire />
     <site-footer />
   </div>
 </template>
 
 <script>
-import hero from '@/components/Hero'
-import siteFooter from '@/components/SiteFooter'
+import Hero from '@/components/Hero'
+import SiteFooter from '@/components/SiteFooter'
+import Hire from '@/components/Hire'
+import Signup from '@/components/Signup'
 
 export default {
   components: {
-    hero,
-    siteFooter
+    Hero,
+    SiteFooter,
+    Hire,
+    Signup
   }
 }
 </script>
@@ -35,7 +47,6 @@ p {
 html {
   font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
     sans-serif;
-  font-size: 16px;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;

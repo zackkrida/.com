@@ -1,21 +1,27 @@
-import Vue from "vue";
-import Router from "vue-router";
-import Home from "./views/Home.vue";
-import About from "./views/About.vue";
+import Vue from 'vue'
+import Router from 'vue-router'
 
-Vue.use(Router);
+Vue.use(Router)
 
 export default new Router({
+  mode: 'history',
+  scrollBehavior(to, from, savedPosition) {
+    if (savedPosition) {
+      return savedPosition
+    } else {
+      // return { x: 0, y: 0 }
+    }
+  },
   routes: [
     {
-      path: "/",
-      name: "home",
-      component: Home
+      path: '/',
+      name: 'home',
+      component: () => import('./views/Home')
     },
     {
-      path: "/about",
-      name: "about",
-      component: About
+      path: '/hire',
+      name: 'hire',
+      component: () => import('./views/Hire')
     }
   ]
-});
+})

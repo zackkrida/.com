@@ -1,12 +1,9 @@
 <template>
   <header class="c-hero" :class="headerClass">
 
-    <router-link to="/" class="c-hero__inner c-hero__image">
-      <img class="" src="@/assets/img/zack-desk.gif" alt="Zack Krida">
-    </router-link>
-
-    <section v-tilt="{ max: 15, reset: false }" class="c-hero__inner">
-      <h1>
+    <section class="c-hero__inner">
+      <div>
+              <h1>
         <router-link class="u-title" to="/">zack krida
           <span class="u-hide--xs">is a creative developer</span>
           <span class="u-hide"> in providence</span>
@@ -16,11 +13,16 @@
       <div ref="hideContent" class="c-hero__content" :style="setStyle" :class="{ 'c-hero__content--hidden': small }">
         <p>I'm Zack, a creative software developer in Providence, RI. I plan and develop fast, responsive web applications and sites that work on any device. I'm also deeply interested in print, particularly zines and independent publishing. You can reach me the quickest
           <a href="http://www.twitter.com/zackkrida">on twitter @zackkrida</a>. For less-immediate or longer requests send me an email
-          <a href="mailto:zackwcote@gmail.com"> at zackwcote@gmail.com.</a>
+          <a href="mailto:zackkrida@protonmail.com"> at zackkrida@protonmail.com.</a>
         </p>
       </div>
-
+      </div>
     </section>
+
+    <router-link to="/" class="c-hero__inner c-hero__image">
+      <img class="" src="@/assets/img/zack-desk.gif" alt="Zack Krida">
+    </router-link>
+
   </header>
 </template>
 
@@ -60,7 +62,8 @@ export default {
   display: flex;
   text-align: center;
   justify-content: space-between;
-  font-size: 1.4rem;
+  font-size: 1.1rem;
+  line-height: 1.4;
   background-color: #fcfcfc;
   transition: 0.4s ease-in;
   transition-delay: 0.2s;
@@ -72,17 +75,19 @@ export default {
 }
 
 .c-hero__inner {
-  flex: 2.5;
   padding: 2rem;
-
+  flex: 2.5;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: left;
+
+  @media (min-width: 900px) {
+    padding: 6rem 8rem 4rem 8rem;
+  }
 
   p {
-    text-align: left;
-    width: 600px;
     max-width: 100%;
   }
 

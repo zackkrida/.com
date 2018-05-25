@@ -1,17 +1,25 @@
 <template>
-  <div class="home">
-    <h1>home page</h1>
+  <div class="c-section c-section--posts u-bg--accent">
+    <h2>recent writing</h2>
+    <post-list />
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import PostList from '@/components/PostList'
 
 export default {
-  name: 'home',
+  name: 'latest-posts',
   components: {
-    HelloWorld
+    PostList
   }
 }
 </script>
+
+<style>
+@media (min-width: 900px) {
+  .c-section--posts {
+    padding-left: 9rem;
+  }
+}
+</style>
