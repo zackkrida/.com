@@ -6,7 +6,7 @@
               <h1>
         <router-link class="u-title" to="/">zack krida
           <span class="u-hide--xs">is a creative developer</span>
-          <span class="u-hide"> in providence</span>
+          <span class="u-hide"> in providence ri</span>
         </router-link>
       </h1>
 
