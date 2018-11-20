@@ -13,7 +13,8 @@
                     <div class="response" id="mce-success-response" style="display:none"></div>
                 </div>
                 <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                <div style="position: absolute; left: -5000px;">
+                <div  aria-hidden="true" style="position: absolute; left: -5000px;">
+                    <label class="sr-only" for="mce-EMAIL">Enter your Email Address</label>
                     <input type="text" name="b_fb2252af4ac889bb06161fef3_e558a68b49" tabindex="-1" value="">
                 </div>
                 <div></div>
