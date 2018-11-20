@@ -1,6 +1,11 @@
 <template>
   <section class="c-section u-bg--primary c-newsletter-signup">
-    <div class="c-section__bg-image"></div>
+    <div class="c-section__bg-image">
+        <picture>
+          <source srcset="@/assets/img/lilly.webp" type="image/webp">
+          <img src="@/assets/img/lilly.jpg" alt="a lilly sits in front of a window in my providence, ri apartment on a cool winter morning.">
+      </picture>
+    </div>
 
     <div class="c-section__content">
       <h2>Newsletter</h2>
@@ -18,8 +23,8 @@ import Mailchimp from '@/components/Mailchimp'
 export default {
   name: 'newsletter-signup',
   components: {
-    Mailchimp
-  }
+    Mailchimp,
+  },
 }
 </script>
 

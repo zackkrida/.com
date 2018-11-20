@@ -20,7 +20,10 @@
     </section>
 
     <router-link to="/" class="c-hero__inner c-hero__image">
-      <img class="" src="@/assets/img/zack-desk.gif" alt="Zack Krida">
+      <picture>
+        <source srcset="@/assets/img/zack-desk.webp" type="image/webp">
+        <img src="@/assets/img/zack-desk.jpg" alt="overhead view of me (Zack Krida) at my desk, with a cool monochromatic red color palette.">
+      </picture>
     </router-link>
 
   </header>
@@ -31,7 +34,7 @@ export default {
   name: 'header',
   data() {
     return {
-      headerHeight: 0
+      headerHeight: 0,
     }
   },
   mounted() {
@@ -40,7 +43,7 @@ export default {
   computed: {
     headerClass() {
       return {
-        'c-hero--small': this.small
+        'c-hero--small': this.small,
       }
     },
     small() {
@@ -49,10 +52,10 @@ export default {
     setStyle() {
       if (!this.small) return {}
       return {
-        'margin-top': `${-this.headerHeight}px`
+        'margin-top': `${-this.headerHeight}px`,
       }
-    }
-  }
+    },
+  },
 }
 </script>
 
@@ -101,12 +104,6 @@ export default {
   flex: 1.5;
   padding: 0;
   transition: 0.65s all ease-in;
-
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
 
   .c-hero--small & {
     flex: 0.5;

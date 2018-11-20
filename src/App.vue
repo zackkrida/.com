@@ -2,11 +2,11 @@
   <div id="app">
     <hero />
 
-      <main class="c-page-content" v-parallax="-4">
-        <transition name="page">
-          <router-view />
-        </transition>
-      </main>
+    <main class="c-page-content" v-parallax="-4">
+      <transition name="page">
+        <router-view />
+      </transition>
+    </main>
 
     <signup />
     <hire />
@@ -25,8 +25,8 @@ export default {
     Hero,
     SiteFooter,
     Hire,
-    Signup
-  }
+    Signup,
+  },
 }
 </script>
 
@@ -45,8 +45,8 @@ p {
 }
 
 html {
-  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
-    sans-serif;
+  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, 'Helvetica Neue', Arial, sans-serif;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -109,6 +109,14 @@ a {
   padding: 1rem;
 }
 
+img,
+picture,
+source {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .c-section__bg-image {
   position: absolute;
   top: 0;
@@ -116,10 +124,8 @@ a {
   bottom: 0;
   right: 0;
   width: 100%;
-  background: url('./assets/img/flowers.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
   transition: opacity 0.3s ease-in;
+  object-fit: cover;
 
   @media (max-width: 600px) {
     opacity: 0.25;
