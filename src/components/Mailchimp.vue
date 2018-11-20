@@ -6,7 +6,6 @@
                 <div class="mc-field-group">
                     <label class="sr-only" for="mce-EMAIL">Enter your Email Address</label>
                     <input type="email" value="" name="EMAIL" placeholder="Email Address" class="required email" id="mce-EMAIL">
-                    <label class="sr-only" for="mce-EMAIL">Submit to subscribe to my newsletter</label>
                     <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="c-btn">
                 </div>
                 <div id="mce-responses" class="clear">
