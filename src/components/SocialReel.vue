@@ -7,13 +7,13 @@
           <a href="tel://14014809573">+401.480.9573</a>
         </li>
         <li>
-          <a href="mailto:zackwcote@gmail.com">zackwcote@gmail.com</a>
+          <a href="mailto:zackkrida@protonmail.com">zackkrida@protonmail.com</a>
         </li>
         <li>
-          <a href="http://twitter.com/zackkrida">@zackkrida</a>
+          <a href="https://twitter.com/zackkrida">@zackkrida</a>
         </li>
         <li>
-          <a href="http://github.com/zackkrida">GitHub</a>
+          <a href="https://github.com/zackkrida">GitHub</a>
         </li>
       </ul>
     </div>
