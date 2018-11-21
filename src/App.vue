@@ -71,7 +71,7 @@ a {
 
 p,
 ul {
-  a {
+  a:not(.social-reel__link) {
     transition: 0.3s all cubic-bezier(0.175, 0.885, 0.32, 1.275);
 
     &:hover {
