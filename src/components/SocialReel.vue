@@ -1,59 +1,42 @@
 <template>
-  <div class="c-social-reel__wrap">
-    <div class="c-social-reel">
-      <ul>
+  <aside class="c-social-reel__wrap">
+      <ul class="c-social-reel">
         <li>Get&nbsp;in&nbsp;touch:</li>
         <li>
-          <a href="tel://14014809573">+401.480.9573</a>
+          <a class="social-reel__link" href="tel://14014809573">+401.480.9573</a>
         </li>
         <li>
-          <a href="mailto:zackkrida@protonmail.com">zackkrida@protonmail.com</a>
+          <a class="social-reel__link" href="mailto:zackkrida@protonmail.com">zackkrida@protonmail.com</a>
         </li>
         <li>
-          <a href="https://twitter.com/zackkrida">@zackkrida</a>
+          <a class="social-reel__link" href="https://twitter.com/zackkrida">@zackkrida</a>
         </li>
         <li>
-          <a href="https://github.com/zackkrida">GitHub</a>
+          <a class="social-reel__link" href="https://github.com/zackkrida">GitHub</a>
         </li>
       </ul>
-    </div>
-  </div>
+  </aside>
 </template>
 
 <style lang="scss">
 .c-social-reel {
-  width: 100%;
+  align-items: center;
   background-color: #48435e;
   color: #fcfcfc;
-  font-weight: 700;
+  display: flex;
   font-size: 1.25rem;
+  font-weight: 700;
+  justify-content: center;
+  list-style: none;
+  margin: 0 auto;
   overflow-x: scroll;
+  padding: 0;
   position: relative;
+  width: 100%;
 
-  ul {
-    display: block;
-    padding: 0;
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-
-    @media (max-width: 900px) {
-      justify-content: flex-start;
-      padding: 0 2rem;
-    }
-  }
-
-  a {
-    color: inherit;
-    text-decoration: none;
-    display: block;
-    padding: 2rem;
-
-    @media (max-width: 900px) {
-      padding: 1rem;
-    }
+  @media (max-width: 900px) {
+    justify-content: flex-start;
+    padding: 0 2rem;
   }
 }
 
@@ -68,6 +51,26 @@
     top: 0;
     background: linear-gradient(to left, #48435e, rgba(0, 0, 0, 0));
     right: 0;
+  }
+}
+
+.social-reel__link {
+  color: inherit;
+  text-decoration: none;
+  display: block;
+  padding: 2rem;
+  transition: 0.2s all cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+  &:hover {
+    transform: scale(1.05) rotate(-2deg);
+  }
+
+  *:nth-child(even) > &:hover {
+    transform: scale(1.2) rotate(2deg);
+  }
+
+  @media (max-width: 900px) {
+    padding: 1rem;
   }
 }
 </style>

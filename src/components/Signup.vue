@@ -8,7 +8,7 @@
     </div>
 
     <div class="c-section__content">
-      <h2>Newsletter</h2>
+      <h2>email newsletter</h2>
       <p>
         Subscribe to a once-monthly email with my scattered thoughts, experiments, and links.
       </p>

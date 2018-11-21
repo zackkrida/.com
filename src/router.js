@@ -9,19 +9,24 @@ export default new Router({
     if (savedPosition) {
       return savedPosition
     } else {
-      // return { x: 0, y: 0 }
+      return { x: 0, y: 0 }
     }
   },
   routes: [
     {
       path: '/',
       name: 'home',
-      component: () => import('./views/Home')
+      component: () => import('./views/Home'),
     },
     {
       path: '/hire',
       name: 'hire',
-      component: () => import('./views/Hire')
-    }
-  ]
+      component: () => import('./views/Hire'),
+    },
+    {
+      path: '/bits-and-bites',
+      name: "'bits and bites",
+      component: () => import('./views/Bits'),
+    },
+  ],
 })

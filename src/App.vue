@@ -64,7 +64,22 @@ body {
 a {
   color: #ad4444;
   font-weight: 700;
+  display: inline-block;
+  will-change: transform;
   text-decoration: none;
+}
+
+p,
+ul {
+  a {
+    transition: 0.3s all cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+    &:hover {
+      background-color: #ad4444;
+      color: #fff;
+      transform: rotate(1deg);
+    }
+  }
 }
 
 .u-title {
@@ -107,6 +122,12 @@ a {
 
 .c-section--small {
   padding: 1rem;
+}
+
+@media (min-width: 900px) {
+  .c-section--content {
+    padding-left: 8rem;
+  }
 }
 
 img,
@@ -165,7 +186,7 @@ source {
   }
 }
 
-.page-enter,
+.page-enter-to,
 .page-leave-to {
   * {
     opacity: 0;
@@ -204,6 +225,10 @@ source {
   }
 }
 
+.u-plain-link {
+  color: inherit;
+}
+
 .sr-only {
   position: absolute;
   height: 1px;
@@ -213,5 +238,12 @@ source {
   clip-path: polygon(0px 0px, 0px 0px, 0px 0px);
   -webkit-clip-path: polygon(0px 0px, 0px 0px, 0px 0px);
   overflow: hidden !important;
+}
+
+.badge {
+  background-color: #ad4444;
+  padding: 0.2rem;
+  font-size: 0.75rem;
+  border-radius: 4px;
 }
 </style>
