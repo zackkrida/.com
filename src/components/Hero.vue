@@ -4,7 +4,8 @@
       <div>
         <h1>
           <router-link class="u-title" to="/">zack krida
-            <span class="u-hide--xs">is a creative developer</span>
+            <span class="u-hide--sm">is a creative developer</span>
+            <span class="u-hide--above-xs">writes code</span>
             <span class="u-hide"> in providence ri</span>
           </router-link>
         </h1>
@@ -75,6 +76,10 @@ export default {
   transition: 0.4s ease-in;
   transition-delay: 0.2s;
   overflow: hidden;
+
+  @media (max-width: 600px) {
+    flex-direction: column-reverse;
+  }
 
   @media (max-width: 900px) {
     margin-top: 0.5rem;

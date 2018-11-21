@@ -219,8 +219,14 @@ source {
   }
 }
 
-.u-hide--xs {
-  @media (max-width: 480px) {
+.u-hide--above-xs {
+  @media (min-width: 480px) {
+    display: none;
+  }
+}
+
+.u-hide--sm {
+  @media (max-width: 600px) {
     display: none;
   }
 }
