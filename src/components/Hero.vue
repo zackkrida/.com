@@ -14,11 +14,11 @@
           <p>I'm Zack, a full-stack software developer in Providence, RI. I plan and develop fast, responsive web applications and sites that work on any device. I love optimizing front-end performance and shaving off bites wherever possible. Some of my favorite speedy tools are:</p>
           <ul>
             <li><a href="https://preactjs.com/">preact: fast 3kB alternative to react with the same modern api.</a></li>
-            <li><a href="https://developers.google.com/web/tools/lighthouse/">lighthouse: a performance auditing tool</a> (this site scores <a href="https://lighthouse-dot-webdotdevsite.appspot.com/lh/html?url=http://zackkrida.com"><i>at least</i> a 99</a>).</li>
+            <li><a href="https://developers.google.com/web/tools/lighthouse/">lighthouse: a performance auditing tool</a> (this site scores <a href="https://lighthouse-dot-webdotdevsite.appspot.com/lh/html?url=https://zackkrida.com"><i>at least</i> a 99</a>).</li>
             <li><a href="https://date-fns.org/">date-fns: a bite-sized library for working with dates in JavaScript.</a></li>
           </ul>
           <p>You can reach me the quickest
-            <a href="http://www.twitter.com/zackkrida">on twitter @zackkrida</a>. For less-immediate or more-elaborate requests send me an email
+            <a href="https://www.twitter.com/zackkrida">on twitter @zackkrida</a>. For less-immediate or more-elaborate requests send me an email
             <a href="mailto:zackkrida@protonmail.com"> at zackkrida@protonmail.com.</a> Thank you! <a href="https://medium.com/@ThatMrE/last-week-i-drunkenly-emailed-noam-chomsky-c1f968873a93">Like the great Noam Chomsky,</a> I try to reply to all inquries.
           </p>
         </div>
