@@ -3,19 +3,40 @@
     <article class="c-postlist-post">
       <router-link class="u-plain-link" to="/bits-and-bites">
         <h3>'bits n' bites! ✨new✨</h3>
-        <p>tiny bits of content i post semi-regularly. fun articles and snippets from around the web. sometimes code-related, often political instead.</p>
+        <p>
+          tiny bits of content i post semi-regularly. fun articles and snippets
+          from around the web. sometimes code-related, often political instead.
+        </p>
       </router-link>
     </article>
     <article class="c-postlist-post">
-      <a href="https://medium.com/@zackkrida/building-better-backgrounds-e8dad55943c">
-        <h3>Building Better Backgrounds<br><small class="badge">posted on medium, sorry</small></h3>
-        <p>Approaches to stacking css background images on mobile for improved readability, using object-fit and ES2015+.</p>
+      <a
+        href="https://medium.com/@zackkrida/building-better-backgrounds-e8dad55943c"
+      >
+        <h3>
+          Building Better Backgrounds
+          <br />
+          <small class="badge">posted on medium, sorry</small>
+        </h3>
+        <p>
+          Approaches to stacking css background images on mobile for improved
+          readability, using object-fit and ES2015+.
+        </p>
       </a>
     </article>
     <article class="c-postlist-post">
-      <a href="https://medium.com/@zackkrida/optimize-performance-with-laravel-mix-1c93ea384322">
-        <h3>Optimize Perf With Laravel Mix<br><small class="badge">posted on medium, sorry</small></h3>
-        <p>Split your Laravel App’s vendor JavaScript from your application code to boost performance.</p>
+      <a
+        href="https://medium.com/@zackkrida/optimize-performance-with-laravel-mix-1c93ea384322"
+      >
+        <h3>
+          Optimize Perf With Laravel Mix
+          <br />
+          <small class="badge">posted on medium, sorry</small>
+        </h3>
+        <p>
+          Split your Laravel App’s vendor JavaScript from your application
+          code to boost performance.
+        </p>
       </a>
     </article>
   </div>
@@ -25,9 +46,9 @@
 export default {
   data() {
     return {
-      tiltSettings: { max: 10 },
+      tiltSettings: { max: 10 }
     }
-  },
+  }
 }
 </script>
 

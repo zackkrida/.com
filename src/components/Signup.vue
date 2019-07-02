@@ -1,16 +1,20 @@
 <template>
   <section class="c-section u-bg--primary c-newsletter-signup">
     <div class="c-section__bg-image">
-        <picture>
-          <source srcset="@/assets/img/lilly.webp" type="image/webp">
-          <img src="@/assets/img/lilly.jpg" alt="a lilly sits in front of a window in my providence, ri apartment on a cool winter morning.">
+      <picture>
+        <source srcset="@/assets/img/lilly.webp" type="image/webp" />
+        <img
+          src="@/assets/img/lilly.jpg"
+          alt="a lilly sits in front of a window in my providence, ri apartment on a cool winter morning."
+        />
       </picture>
     </div>
 
     <div class="c-section__content">
       <h2>email newsletter</h2>
       <p>
-        Subscribe to a once-monthly email with my scattered thoughts, experiments, and links.
+        Subscribe to a once-monthly email with my scattered thoughts,
+        experiments, and links.
       </p>
       <mailchimp />
     </div>
@@ -18,13 +22,13 @@
 </template>
 
 <script>
-import Mailchimp from '@/components/Mailchimp'
+import Mailchimp from "@/components/Mailchimp"
 
 export default {
-  name: 'newsletter-signup',
+  name: "newsletter-signup",
   components: {
-    Mailchimp,
-  },
+    Mailchimp
+  }
 }
 </script>
 

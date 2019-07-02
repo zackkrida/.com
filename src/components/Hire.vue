@@ -1,14 +1,19 @@
 <template>
   <div class="c-hire-box" v-tilt="{ scale: 1.1, axis: 'x', max: 15 }">
     <router-link to="/hire">
-      <h3>I am <strong>currently accepting select projects and work opportunities</strong>.</h3>
+      <h3>
+        I am
+        <strong
+          >currently accepting select projects and work opportunities</strong
+        >.
+      </h3>
     </router-link>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'hire',
+  name: "hire"
 }
 </script>
 

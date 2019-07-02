@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import SocialReel from '@/components/SocialReel'
+import SocialReel from "@/components/SocialReel"
 
 export default {
   components: {

@@ -1,22 +1,35 @@
 <template>
   <aside class="c-social-reel__wrap">
-      <ul class="c-social-reel">
-        <li>Get&nbsp;in&nbsp;touch:</li>
-        <li>
-          <a class="social-reel__link" href="tel://14014809573">+401.480.9573</a>
-        </li>
-        <li>
-          <a class="social-reel__link" href="mailto:zackkrida@protonmail.com">zackkrida@protonmail.com</a>
-        </li>
-        <li>
-          <a class="social-reel__link" href="https://twitter.com/zackkrida">@zackkrida</a>
-        </li>
-        <li>
-          <a class="social-reel__link" href="https://github.com/zackkrida">GitHub</a>
-        </li>
-      </ul>
+    <ul class="c-social-reel">
+      <li>Get&nbsp;in&nbsp;touch:</li>
+      <li>
+        <a class="social-reel__link" href="tel://14014809573">+401.480.9573</a>
+      </li>
+      <li>
+        <a class="social-reel__link" href="mailto:zackkrida@protonmail.com"
+          >zackkrida@protonmail.com</a
+        >
+      </li>
+      <li>
+        <a class="social-reel__link" href="https://twitter.com/zackkrida"
+          >@zackkrida</a
+        >
+      </li>
+      <li>
+        <a class="social-reel__link" href="https://github.com/zackkrida"
+          >GitHub</a
+        >
+      </li>
+    </ul>
   </aside>
 </template>
+
+<script>
+export default {
+  name: "SocialReel"
+}
+</script>
+
 
 <style lang="scss">
 .c-social-reel {
@@ -44,7 +57,7 @@
   position: relative;
 
   &:after {
-    content: '';
+    content: "";
     height: 100%;
     width: 60px;
     position: absolute;
