@@ -189,7 +189,7 @@ function getPageString(meta: PageMeta, content: string) {
 					href="https://represent.io/zackkrida.pdf">or here
 					(PDF)</a>.</p>
 			<h2>About this site</h2>
-			<p>I made this site on <b>Friday January 24th, 2019</b> in a McDonalds in Keaʻau, Hawaii. It uses a single-file custom static site generator to turn TypeScript files into html pages. I will make improvements soon and will keep a changelog. For now you can view the code on Github  <a href="https://github.com/zackkrida/.com">here</a>:
+			<p>I made this site on <b>Friday January 24th, 2019</b> in a McDonalds in Keaʻau, Hawaii. It uses a single-file custom static site generator to turn TypeScript files into html pages. I will make improvements soon and will keep a changelog. For now you can view the code on Github  <a href="https://github.com/zackkrida/.com">here.</a>
 	`
 }
 
