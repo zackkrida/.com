@@ -3,11 +3,11 @@ export const meta = {
 }
 
 export const page = `
-	# React Generics In TypeScript
+# React Generics In TypeScript
 
-	lorem ipsum dolor set amet
+lorem ipsum dolor set amet
 
-	- one
-	-two
-	three
+- one
+-two
+three
 `

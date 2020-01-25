@@ -3,6 +3,8 @@ export const meta = {
 }
 
 export const page = `
+![me in hawaii](/img/me.jpg)
+
 Hi there, I'm Zack! I'm a full-stack developer currently working on projects using TypeScript, Node.js, GraphQL,
 and Postgres. I am also comfortable, but less happy, in PHP. I got my start in web development from Neopets and
 MySpace. After a several year break I came back to software development and have loved it since.
