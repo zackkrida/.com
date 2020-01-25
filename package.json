@@ -1,0 +1,21 @@
+{
+  "name": "zackkrida.com",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:zackkrida/.com.git",
+  "author": "zackkrida <zackkrida@protonmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "ts-node build.ts"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^8.0.1",
+    "@types/klaw": "^3.0.0",
+    "@types/markdown-it": "^0.0.9",
+    "fs-extra": "^8.1.0",
+    "klaw": "^3.0.0",
+    "markdown-it": "^10.0.0",
+    "ts-node": "^8",
+    "typescript": "^3.7.5"
+  }
+}
