@@ -250,5 +250,7 @@ function getPageString(meta: PageMeta, content: string) {
 		nav.addEventListener('mouseenter', setPurple)
 		nav.addEventListener('mouseleave', setBlue)
 		</script>
+	</body>
+</html>
 	`
 }
