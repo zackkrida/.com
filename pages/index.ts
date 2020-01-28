@@ -1,13 +1,14 @@
-export const meta = {
-  name: 'zack krida ~ full stack software developer'
+export const meta: PageMeta = {
+  name: 'zack krida ~ full stack software developer',
+  heading: 'Zack Krida is remotely building software for distributed teams.',
+  showSubtitle: true
 }
 
 export const page = `
 ![me in hawaii](/img/me.jpg)
 
 Hi there, I'm Zack! I'm a full-stack developer currently working on projects using TypeScript, Node.js, GraphQL,
-and Postgres. I am also comfortable, but less happy, in PHP. I got my start in web development from Neopets and
-MySpace. After a several year break I came back to software development and have loved it since.
+and Postgres. I got my start in web development from Neopets and MySpace. After a several year break I came back to software development and was amazed by the modern state of JavaScript.
 
 I believe that specific tech stacks and libraries *can* and *should* be learned on the job, when a
 use case nessitates them, and prefer to focus on strong fundamentals and principles. I have worked with nearly all
