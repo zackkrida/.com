@@ -5,7 +5,7 @@ export const meta: PageMeta = {
 }
 
 export const page = `
-![me in hawaii](/img/me.jpg)
+<img src="/img/me.jpg" alt="me in hawaii" width="400" height="527" />
 
 Hi there, I'm Zack! I'm a full-stack developer currently working on projects using TypeScript, Node.js, GraphQL,
 and Postgres. I got my start in web development from Neopets and MySpace. After a several year break I came back to software development and was amazed by the modern state of JavaScript.

@@ -1,6 +1,8 @@
 import klaw from 'klaw'
-import {mkdir, remove, writeFile, copy} from 'fs-extra'
-const md = require('markdown-it')()
+import { mkdir, remove, writeFile, copy } from 'fs-extra'
+const md = require('markdown-it')({
+  html: true
+})
 
 const pagesDir = 'pages'
 const assetDir = 'resources'
@@ -8,42 +10,48 @@ const outputDir = 'public'
 
 // Create directories and build pages as needed
 async function build() {
-	// Remove the existing output dir, recreate it, and copy our assets from the 'resources' folder into it
-	await remove(outputDir)
-	await mkdir(outputDir)
-	await copy(assetDir, outputDir)
+  // Remove the existing output dir, recreate it, and copy our assets from the 'resources' folder into it
+  await remove(outputDir)
+  await mkdir(outputDir)
+  await copy(assetDir, outputDir)
 
-	const directories = []
-	const files = []
+  const directories = []
+  const files = []
 
+  for await (const file of klaw(pagesDir)) {
+    if (file.path.endsWith(pagesDir)) {
+      continue
+    }
 
-	for await (const file of klaw(pagesDir)) {
-		if(file.path.endsWith(pagesDir)) {
-			continue
-		}
+    if (file.stats.isDirectory()) {
+      directories.push(`${outputDir}/${file.path.split(`${pagesDir}/`)[1]}`)
+    } else {
+      const { meta, page } = await import(
+        `./${pagesDir}/${file.path.split(`${pagesDir}/`)[1]}`
+      )
+      const content = md.render(page)
+      files.push({
+        path: `${outputDir}/${file.path
+          .split(`${pagesDir}/`)[1]
+          .replace('.ts', '.html')}`,
+        content: getPageString(meta, content)
+      })
+    }
+  }
 
-		if(file.stats.isDirectory()) {
-			directories.push(`${outputDir}/${file.path.split(`${pagesDir}/`)[1]}`)
-		} else {
-			const { meta, page } = await import(`./${pagesDir}/${file.path.split(`${pagesDir}/`)[1]}`)
-			const content = md.render(page)
-			files.push({path: `${outputDir}/${file.path.split(`${pagesDir}/`)[1].replace('.ts', '.html')}`, content: getPageString(meta, content) })
-		}
-	}
-
-	await Promise.all(directories.map(dirname => mkdir(dirname)))
-	await Promise.all(files.map(({path, content}) => writeFile(path,content)))
+  await Promise.all(directories.map(dirname => mkdir(dirname)))
+  await Promise.all(files.map(({ path, content }) => writeFile(path, content)))
 }
 
 try {
-	build()
-} catch(error) {
-	console.error(error)
-	process.exit(0)
+  build()
+} catch (error) {
+  console.error(error)
+  process.exit(0)
 }
 
 function getPageString(meta: PageMeta, content: string) {
-	return `
+  return `
 	<!DOCTYPE html>
 	<html lang="en">
 	<head>
@@ -171,6 +179,7 @@ function getPageString(meta: PageMeta, content: string) {
 		img {
 			width: 400px;
 			max-width: 100%;
+			background: #ff7e95;
 			border: .5em solid #ff7e95;
 		}
 
