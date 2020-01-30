@@ -179,6 +179,7 @@ function getPageString(meta: PageMeta, content: string) {
 		img {
 			width: 400px;
 			max-width: 100%;
+			height: auto;
 			background: #ff7e95;
 			border: .5em solid #ff7e95;
 		}
