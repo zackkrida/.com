@@ -233,7 +233,7 @@ function getPageString(meta: PageMeta, content: string) {
 		<header>
 			<nav><a href="/">Home</a><a href="/work">Work</a><a href="/say-hi">Say Hi</a></nav>
 			<h2 class="title">${meta.heading}</h2>
-			${meta.showSubtitle ? `<h3>Current location: Pahoa, Hawaii</h3>` : ''}
+			${meta.showSubtitle ? `<h3>Current location: Providence, Rhode Island</h3>` : ''}
 		</header>
 
 		<main>
