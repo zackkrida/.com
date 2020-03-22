@@ -11,7 +11,7 @@ Hi there, I'm Zack! I'm a full-stack developer currently working on projects usi
 and Postgres. I got my start in web development from Neopets and MySpace. After a several year break I came back to software development and was amazed by the modern state of JavaScript.
 
 I believe that specific tech stacks and libraries *can* and *should* be learned on the job, when a
-use case nessitates them, and prefer to focus on strong fundamentals and principles. I have worked with nearly all
+use case necessitates them, and prefer to focus on strong fundamentals and principles. I have worked with nearly all
 of the contemporary front-end JavaScript frameworks and enjoy them, but also stay aware of the raw browser apis
 and language features behind them.
 
