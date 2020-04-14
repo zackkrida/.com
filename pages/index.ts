@@ -1,14 +1,14 @@
 export const meta: PageMeta = {
   name: 'zack krida ~ full stack software developer',
   heading: 'Zack Krida is remotely building software for distributed teams.',
-  showSubtitle: true
+  showSubtitle: true,
 }
 
 export const page = `
 <img src="/img/me.jpg" alt="me in hawaii" width="400" height="527" />
 
 Hi there, I'm Zack! I'm a full-stack developer currently working on projects using TypeScript, Node.js, GraphQL,
-and Postgres. I got my start in web development from Neopets and MySpace. After a several year break I came back to software development and was amazed by the modern state of JavaScript.
+and Postgres. I got my start in web development from Neopets and Myspace. After a several year break I came back to software development and was amazed by the modern state of JavaScript.
 
 I believe that specific tech stacks and libraries *can* and *should* be learned on the job, when a
 use case necessitates them, and prefer to focus on strong fundamentals and principles. I have worked with nearly all

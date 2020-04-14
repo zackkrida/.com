@@ -1,7 +1,7 @@
 import klaw from 'klaw'
 import { mkdir, remove, writeFile, copy } from 'fs-extra'
 const md = require('markdown-it')({
-  html: true
+  html: true,
 })
 
 const pagesDir = 'pages'
@@ -34,7 +34,7 @@ async function build() {
         path: `${outputDir}/${file.path
           .split(`${pagesDir}/`)[1]
           .replace('.ts', '.html')}`,
-        content: getPageString(meta, content)
+        content: getPageString(meta, content),
       })
     }
   }
@@ -233,7 +233,11 @@ function getPageString(meta: PageMeta, content: string) {
 		<header>
 			<nav><a href="/">Home</a><a href="/work">Work</a><a href="/say-hi">Say Hi</a></nav>
 			<h2 class="title">${meta.heading}</h2>
-			${meta.showSubtitle ? `<h3>Current location: Providence, Rhode Island</h3>` : ''}
+			${
+        meta.showSubtitle
+          ? `<h3>Current location: Providence, Rhode Island</h3>`
+          : ''
+      }
 		</header>
 
 		<main>
@@ -248,7 +252,7 @@ function getPageString(meta: PageMeta, content: string) {
 					href="https://represent.io/zackkrida.pdf">or here
 					(PDF)</a>.</p>
 			<h2>About this site</h2>
-			<p>I made this site on <b>Friday January 24th, 2019</b> in a McDonalds in Keaʻau, Hawaii. It uses a single-file custom static site generator to turn TypeScript files into html pages. I will make improvements soon and will keep a changelog. For now you can view the code on Github  <a href="https://github.com/zackkrida/.com">here.</a>
+			<p>I made this site on <b>Friday January 24th, 2020</b> in a McDonalds in Keaʻau, Hawaii. It uses a single-file custom static site generator to turn TypeScript files into html pages. I will make improvements soon and will keep a changelog. For now you can view the code on Github  <a href="https://github.com/zackkrida/.com">here.</a>
 		</footer>
 
 		<script>
