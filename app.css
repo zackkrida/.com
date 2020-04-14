@@ -1,0 +1,98 @@
+:root {
+  /* Colors */
+  --color-sidebar: hsla(115, 100%, 100%, 1);
+  --color-content: hsla(116, 0%, 98%, 1);
+  --color-borders: hsl(0, 0%, 84.7%);
+
+  --color-text: hsla(116, 0%, 7%, 1);
+  --color-text-alt: hsla(212, 8%, 45%, 1);
+
+  --color-accent: hsla(349, 100%, 75%, 1);
+  --color-accent-1: hsla(191, 100%, 36%, 1);
+  --color-accent-2: hsla(270, 49%, 39%, 1);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-content: hsla(241, 6%, 15%, 1);
+    --color-sidebar: hsla(241, 4%, 10%, 1);
+    --color-borders: hsl(250, 6%, 30%);
+
+    --color-text: hsla(116, 0%, 100%, 1);
+    --color-text-alt: hsla(116, 0%, 88%, 1);
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 900px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 1300px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+body {
+  color: var(--color-text);
+  background-color: var(--color-content);
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
+    sans-serif, Apple Color Emoji, Segoe UI Emoji;
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+  font-size: 2.2rem;
+  line-height: 2.6rem;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica,
+    Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+}
+
+img {
+  border-radius: 4px;
+  line-height: 0;
+  width: 60vw;
+  max-height: 70vw;
+  object-fit: cover;
+  margin-top: 2rem;
+  margin-right: 1rem;
+  transition: 0.1s all ease-in;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+@media screen and (min-width: 1100px) {
+  img {
+    max-width: calc(100% - 2rem);
+    width: auto;
+  }
+  img:hover {
+    transform: translateY(-2px) scale(1.01);
+  }
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  width: 100%;
+  background-color: var(--color-text-alt);
+}

@@ -1,0 +1,51 @@
+.Sidebar {
+  display: block;
+  z-index: 200;
+  background-color: var(--color-sidebar);
+}
+
+@media screen and (min-width: 900px) {
+  .Sidebar {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    position: sticky;
+    top: 0;
+  }
+}
+
+.SidebarContent {
+  padding: 0 2rem;
+  padding-top: 4rem;
+}
+
+@media screen and (min-width: 900px) {
+  .SidebarContent {
+    padding: 0 3rem;
+    padding-top: 8rem;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .SidebarContent {
+    padding: 0 6rem;
+    padding-top: 10rem;
+  }
+}
+
+@media screen and (max-height: 740px) {
+  .SidebarContent {
+    padding-top: 5rem;
+  }
+}
+
+.Sidebar ul {
+  list-style: none;
+}
+
+.Controls {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-self: flex-end;
+}

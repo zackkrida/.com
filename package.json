@@ -8,8 +8,20 @@
     "start": "next start"
   },
   "dependencies": {
-    "next": "9.3.4",
-    "react": "16.13.1",
-    "react-dom": "16.13.1"
+    "next": "^9.3.4",
+    "preact": "^10.2.1",
+    "preact-render-to-string": "^5.1.4",
+    "react": "github:preact-compat/react#1.0.0",
+    "react-dom": "github:preact-compat/react-dom#1.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^13.11.1",
+    "@types/react": "^16.9.34",
+    "typescript": "^3.8.3"
+  },
+  "prettier": {
+    "semi": false,
+    "tabWidth": 2,
+    "arrowParens": "avoid"
   }
 }
