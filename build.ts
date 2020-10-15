@@ -248,9 +248,7 @@ function getPageString(meta: PageMeta, content: string) {
 			<h2>Want to know more?</h2>
 			<p>You can find me on most social media platforms <b>@zackkrida</b>. For the most direct access, email me at
 				<a href="mailto:sayhi@zackkrida.com">sayhi@zackkrida.com.</a></p>
-			<p>Additionally, you can view my resume <a href="https://represent.io/zackkrida">here (html)</a> or here <a
-					href="https://represent.io/zackkrida.pdf">or here
-					(PDF)</a>.</p>
+			<p>Additionally, you can view my resume <a href="https://standardresume.co/r/zackkrida">here</a>.
 			<h2>About this site</h2>
 			<p>I made this site on <b>Friday January 24th, 2020</b> in a McDonalds in Keaʻau, Hawaii. It uses a single-file custom static site generator to turn TypeScript files into html pages. I will make improvements soon and will keep a changelog. For now you can view the code on Github  <a href="https://github.com/zackkrida/.com">here.</a>
 		</footer>
