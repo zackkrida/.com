@@ -1,0 +1,8 @@
+#__next {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  line-height: 1.4;
+  margin: 0 3rem;
+  max-width: 600px;
+  width: 100%;
+}
