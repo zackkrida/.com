@@ -2,7 +2,15 @@
   box-sizing: border-box;
   font-family: sans-serif;
   line-height: 1.4;
-  margin: 0 3rem;
-  max-width: 600px;
-  width: 100%;
+  padding: 2rem 1rem 1rem;
+}
+
+@media screen and (min-width: 800px) {
+  #__next {
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0 3rem;
+    max-width: 600px;
+    width: 100%;
+  }
 }
