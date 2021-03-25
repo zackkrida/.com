@@ -28,12 +28,12 @@ export default function Post({ post, morePosts, preview }) {
                 <h1>
                   {post.title}
                 </h1>
-                <p>
+                {/* <p>
                   {format(new Date(post.date), 'M/d/y')}
                 </p>
                 <p>
                   {post.author.name}
-                </p>
+                </p> */}
                 {/* {JSON.stringify(post.coverImage, null, 2)}<br /> */}
                 {/* {JSON.stringify(post.author, null, 2)}<br /> */}
 
