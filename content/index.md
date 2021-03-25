@@ -27,4 +27,3 @@ Before that I worked as a consultant and contributor on various pieces of softwa
 ---
 
 [album of the day](/album-of-the-day)
-ls
