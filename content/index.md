@@ -5,12 +5,12 @@ coverImage: '/assets/blog/hello-world/cover.jpg'
 date: '2020-03-16T05:35:07.322Z'
 author:
   name: zack krida
-  picture: '/assets/blog/authors/tim.jpeg'
+  picture: '/assets/zack.jpg'
 ogImage:
   url: '/assets/blog/hello-world/cover.jpg'
 ---
 
-Hi there, I'm Zack! I'm a person with lots of varied interests. There are so many hours in a day and I primarily try to spend as few as possible on Twitter. **Update: I quit twitter. I'm free!** I prefer to spend my time eating, drinking, planning things to eat and drink later, and spending time with people I love.
+Hi there, I'm Zack. I'm a person with lots of varied interests. There are so many hours in a day and I primarily try to spend as few as possible on Twitter. **Update: I quit twitter. I'm free.** I prefer to spend my time eating, drinking, planning things to eat and drink later, and spending time with people I love.
 
 I write software for money and usually enjoy it. I like this quote from Alan J. Perlis in the Forward of the wonderful book _Structure and Interpretation of Computer Programs_:
 
