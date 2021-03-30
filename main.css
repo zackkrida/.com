@@ -21,23 +21,23 @@ a {
 	text-decoration: none;
 }
 
-a[href^="http"]:before {
-	content: "[";
+a[href^='http']:before {
+	content: '[';
 	opacity: 0.5;
 }
 
-a[href^="http"]:after {
-	content: "]";
+a[href^='http']:after {
+	content: ']';
 	opacity: 0.5;
 }
 
-a[href^="/"]:before {
-	content: "{";
+a[href^='/']:before {
+	content: '{';
 	opacity: 0.5;
 }
 
-a[href^="/"]:after {
-	content: "}";
+a[href^='/']:after {
+	content: '}';
 	opacity: 0.5;
 }
 
@@ -58,7 +58,7 @@ h6 {
 }
 
 h1 {
-  text-transform: lowercase;
+	text-transform: lowercase;
 }
 
 hr {
