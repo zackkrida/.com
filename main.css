@@ -1,8 +1,8 @@
 #__next {
 	box-sizing: border-box;
-	font-family: sans-serif;
-	line-height: 1.4;
-	font-size: 0.95rem;
+	font-family: 'Inter', sans-serif;
+	line-height: 1.7;
+	font-size: 1rem;
 	padding: 2rem 1rem 1rem;
 }
 

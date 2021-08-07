@@ -18,7 +18,7 @@ I write software for money and usually enjoy it. I like this quote from Alan J. 
 
 I like to write software in JavaScript. It's not the best, or fastest programming language, but it runs in browsers and I like writing it more than PHP, my first programming language. These days I often use TypeScript, when appropriate, along with other tools like GraphQL, Node.js, and Postgres.
 
-I currently work on the Tinker team at [Automattic](https://automattic.com/), leading a small product team writing open source software.
+I currently lead the [Openverse](/openverse) team at [Automattic](https://automattic.com/), an open source search engine for openly-licensed media.
 
 Previously I wrote more open source software at [Creative Commons](https://creativecommons.org), an international nonprofit organization dedicated to building and sustaining a thriving commons of shared knowledge and culture.
 
