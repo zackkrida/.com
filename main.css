@@ -1,17 +1,18 @@
 #__next {
 	box-sizing: border-box;
 	font-family: 'Inter', sans-serif;
-	line-height: 1.7;
-	font-size: 1rem;
-	padding: 2rem 1rem 1rem;
+	line-height: 1.8;
+	font-size: 1.1rem;
+	padding: 2rem 0.25rem 0.25rem;
 }
 
 @media screen and (min-width: 800px) {
 	#__next {
 		padding: 0;
 		box-sizing: border-box;
-		margin: 0 3rem;
-		max-width: 600px;
+		margin: 0 auto;
+		margin-top: 6rem;
+		max-width: 42rem;
 		width: 100%;
 	}
 }
@@ -68,4 +69,8 @@ hr {
 	background-color: currentColor;
 	margin-bottom: 0.5rem;
 	opacity: 0.5;
+}
+
+.small {
+	font-size: 0.8rem;
 }

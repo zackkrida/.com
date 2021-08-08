@@ -12,7 +12,7 @@ ogImage:
 
 Hi there, I'm Zack. I'm a person with lots of varied interests. There are so many hours in a day and I primarily try to spend as few as possible on Twitter. **Update: I quit twitter. I'm free.** I prefer to spend my time eating, drinking, planning things to eat and drink later, and spending time with people I love.
 
-I write software for money and usually enjoy it. I like this quote from Alan J. Perlis in the Forward of the wonderful book _Structure and Interpretation of Computer Programs_:
+I write and help other people write software for money. I like this quote from Alan J. Perlis in the Forward of the wonderful book _Structure and Interpretation of Computer Programs_:
 
 > "If art interprets our dreams, the computer executes them in the guise of programs!"
 

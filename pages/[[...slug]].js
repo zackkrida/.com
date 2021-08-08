@@ -34,6 +34,13 @@ export default function Post({ post, morePosts, preview }) {
 							{/* {JSON.stringify(post.author, null, 2)}<br /> */}
 
 							<div dangerouslySetInnerHTML={{ __html: post.content }} />
+							<p class="small">
+								Content on this site is licensed under a{' '}
+								<a href="https://creativecommons.org/licenses/by/4.0/">
+									Creative Commons Attribution 4.0 International license
+								</a>
+								.
+							</p>
 						</div>
 					</article>
 				</>
