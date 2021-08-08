@@ -55,8 +55,8 @@ a[href^='/']:after {
 
 @media (prefers-color-scheme: dark) {
 	body {
-		background-color: #181c21;
-		color: #eeeeee;
+		background-color: #b6c9c4;
+		color: #284838;
 	}
 }
 
@@ -98,4 +98,7 @@ footer {
 	list-style: none;
 	margin-bottom: 2rem;
 	text-transform: lowercase;
+}
+details summary::-webkit-details-marker {
+	display: none;
 }
