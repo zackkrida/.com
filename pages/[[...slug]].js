@@ -4,6 +4,14 @@ import Head from 'next/head'
 import { getPostBySlug, getAllPosts } from 'lib/api'
 import markdownToHtml from 'lib/markdownToHtml'
 import { format } from 'date-fns'
+import { Illustration, Ellipse, useRender, Anchor } from 'react-zdog'
+import { useRef } from 'react'
+
+function Spin({ children }) {
+	const ref = useRef(undefined)
+	useRender((t) => (ref.current.rotate.y += 0.03))
+	return <Anchor ref={ref}>{children}</Anchor>
+}
 
 export default function Post({ post, morePosts, preview }) {
 	const router = useRouter()
@@ -21,6 +29,25 @@ export default function Post({ post, morePosts, preview }) {
 							<title>{post.title} ~ zack.cat</title>
 							<meta property="og:image" content={post.ogImage.url} />
 						</Head>
+
+						<div style={{ width: '100%', height: '146px' }}>
+							<Illustration zoom={9}>
+								<Spin>
+									<Ellipse
+										color="#636"
+										rotate={{ x: Math.PI }}
+										stroke={2}
+										diameter={14}
+									/>
+								</Spin>
+								<Ellipse
+									color="#636"
+									rotate={{ x: Math.PI }}
+									stroke={2}
+									diameter={14}
+								/>
+							</Illustration>
+						</div>
 
 						<div>
 							<h1>{post.title}</h1>
