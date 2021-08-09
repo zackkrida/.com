@@ -1,11 +1,15 @@
 ---
 title: 'Openverse'
 excerpt: 'Openverse is a search engine for openly-licensed (mostly CC licensed) media that I help build at Automattic.'
-coverImage: '/assets/blog/hello-world/cover.jpg'
 date: '2020-03-16T05:35:07.322Z'
 author:
   name: zack krida
   picture: '/assets/zack.jpg'
+image:
+  url: 'openverse-loading.gif'
+  width: 600
+  height: 600
+  alt: 'Openverse loader by Francisco Vera and Ballio Chan'
 ---
 
 Openverse is a search engine for openly-licensed media. This includes over 500 million Creative Commons licensed images and is being expanded to support audio and video. Openverse is part of WordPress: the global, open-source project powering over 43% of the web.

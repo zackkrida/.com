@@ -6,8 +6,11 @@ date: '2020-03-16T05:35:07.322Z'
 author:
   name: Zack Krida
   picture: '/assets/blog/authors/joe.jpeg'
-ogImage:
-  url: '/assets/blog/preview/cover.jpg'
+image:
+  url: 'bananna-tree.jpg'
+  alt: 'a bananna tree leaf'
+  width: 1261
+  height: 709
 ---
 
 There's not a record of the day every day. Or most days. I'm only human! I try to write a little about each one when I can.
