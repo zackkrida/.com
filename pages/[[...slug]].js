@@ -29,6 +29,7 @@ export default function Post({ post, posts }) {
 
 						{post.image && (
 							<Image
+								key={post.image.url}
 								priority={true}
 								layout={'responsive'}
 								width={post.image.width}
