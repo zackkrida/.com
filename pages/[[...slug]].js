@@ -4,8 +4,7 @@ import Head from 'next/head'
 import { getPostBySlug, getAllPosts } from 'lib/api'
 import markdownToHtml from 'lib/markdownToHtml'
 import Link from 'next/link'
-import { format } from 'date-fns'
-import { useEffect, useState } from 'react'
+import Image from 'next/image'
 
 export default function Post({ post, posts }) {
 	const router = useRouter()
@@ -25,60 +24,69 @@ export default function Post({ post, posts }) {
 					<article className="content">
 						<Head>
 							<title>{post.title} ~ zack.cat</title>
-							<meta property="og:image" content={post.ogImage.url} />
+							{/* <meta property="og:image" content={post.ogImage.url} /> */}
 						</Head>
 
-						<div>
-							<Link href="/">
-								<a
-									style={{
-										visibility: post.slug !== 'index' ? 'initial' : 'hidden',
-									}}
-								>
-									Return home
-								</a>
-							</Link>
-							<h1>{post.title}</h1>
-							{/* <p>
+						{post.image && (
+							<Image
+								layout={'responsive'}
+								width={post.image.width}
+								height={post.image.height}
+								src={`/images/${post.image.url}`}
+								alt={post.image.alt}
+							/>
+						)}
+
+						<Link href="/">
+							<a
+								className="small"
+								style={{
+									visibility: post.slug !== 'index' ? 'initial' : 'hidden',
+								}}
+							>
+								return home
+							</a>
+						</Link>
+						<h1>{post.title}</h1>
+						{/* <p>
                   {format(new Date(post.date), 'M/d/y')}
                 </p>
                 <p>
                   {post.author.name}
                 </p> */}
-							{/* {JSON.stringify(post.coverImage, null, 2)}<br /> */}
-							{/* {JSON.stringify(post.author, null, 2)}<br /> */}
+						{/* {JSON.stringify(post.image, null, 2)}<br /> */}
+						{/* {JSON.stringify(post.author, null, 2)}<br /> */}
 
-							{content}
+						{content}
 
-							<footer>
-								<nav class="sitemap">
-									<details>
-										<summary>
-											<h2>Sitemap (click to show links) ›</h2>
-										</summary>
-										<ul class="sitemap-links">
-											{posts
-												.filter((i) => i.slug !== 'index')
-												.map((i) => (
-													<li key={i.slug}>
-														<Link href={`/${i.slug}`}>
-															<a>{i.title}</a>
-														</Link>
-													</li>
-												))}
-										</ul>
-									</details>
-								</nav>
+						<footer>
+							<nav class="sitemap">
+								<details>
+									<summary>
+										<h2>Sitemap (click to show links) ›</h2>
+									</summary>
+									<ul class="sitemap-links">
+										{posts
+											.filter((i) => i.slug !== 'index')
+											.map((i) => (
+												<li key={i.slug}>
+													<Link href={`/${i.slug}`}>
+														<a>{i.title}</a>
+													</Link>
+												</li>
+											))}
+									</ul>
+								</details>
+							</nav>
 
-								<p className="small">
-									Content on this site is licensed under a{' '}
-									<a href="https://creativecommons.org/licenses/by/4.0/">
-										Creative Commons Attribution 4.0 International license
-									</a>
-									.
-								</p>
-							</footer>
-						</div>
+							<p className="small">
+								Content on this site is licensed under a{' '}
+								<a href="https://creativecommons.org/licenses/by/4.0/">
+									Creative Commons Attribution 4.0 International license
+								</a>
+								.
+							</p>
+						</footer>
 					</article>
 				</>
 			)}
@@ -96,7 +104,7 @@ export async function getStaticProps({ params }) {
 		'author',
 		'content',
 		'ogImage',
-		'coverImage',
+		'image',
 	])
 
 	return { props: { post, posts } }

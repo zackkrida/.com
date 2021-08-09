@@ -2,6 +2,16 @@
 	margin-top: 0;
 }
 
+body {
+	background-color: #ffb97c;
+}
+
+img {
+	max-width: 100%;
+	mix-blend-mode: multiply;
+	border-radius: 2px;
+}
+
 #__next {
 	box-sizing: border-box;
 	font-family: 'Inter', sans-serif;
@@ -14,8 +24,7 @@
 	#__next {
 		padding: 0;
 		box-sizing: border-box;
-		margin: 0 auto;
-		margin-top: 6rem;
+		margin: 6rem auto;
 		max-width: 42rem;
 		width: 100%;
 	}
@@ -32,9 +41,7 @@ a {
 
 a:before,
 a:after {
-	opacity: 1;
-	color: salmon;
-	font-weight: 500;
+	opacity: 0.3;
 }
 
 a[href^='http']:before {
@@ -53,12 +60,12 @@ a[href^='/']:after {
 	content: '}';
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
 	body {
 		background-color: #b6c9c4;
 		color: #284838;
 	}
-}
+} */
 
 h1,
 h2,

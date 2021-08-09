@@ -1,13 +1,15 @@
 ---
 title: 'zack krida'
-excerpt: 'the homepage of zack.cat'
-coverImage: '/assets/blog/hello-world/cover.jpg'
 date: '2020-03-16T05:35:07.322Z'
+excerpt: 'the homepage of zack.cat'
 author:
   name: zack krida
   picture: '/assets/zack.jpg'
-ogImage:
-  url: '/assets/blog/hello-world/cover.jpg'
+image:
+  url: '04780020.jpg'
+  width: 3087
+  height: 2048
+  alt: "A double exposure film photo of the 'Loney as I'll ever be' grafitti in Providence, RI, with white petunias overlaid"
 ---
 
 Hi there, I'm Zack.
