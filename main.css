@@ -7,6 +7,7 @@ body {
 }
 
 img {
+	background-color: black;
 	max-width: 100%;
 	mix-blend-mode: multiply;
 	border-radius: 2px;

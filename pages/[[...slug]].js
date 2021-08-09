@@ -29,6 +29,7 @@ export default function Post({ post, posts }) {
 
 						{post.image && (
 							<Image
+								priority={true}
 								layout={'responsive'}
 								width={post.image.width}
 								height={post.image.height}
@@ -60,12 +61,12 @@ export default function Post({ post, posts }) {
 						{content}
 
 						<footer>
-							<nav class="sitemap">
+							<nav className="sitemap">
 								<details>
 									<summary>
 										<h2>Sitemap (click to show links) ›</h2>
 									</summary>
-									<ul class="sitemap-links">
+									<ul className="sitemap-links">
 										{posts
 											.filter((i) => i.slug !== 'index')
 											.map((i) => (
