@@ -13,6 +13,10 @@ img {
 	border-radius: 2px;
 }
 
+img.no-effect {
+	mix-blend-mode: normal;
+}
+
 #__next {
 	box-sizing: border-box;
 	font-family: 'Inter', sans-serif;
