@@ -29,7 +29,7 @@ export default function Post({ post, posts }) {
 
 						{post.image && (
 							<Image
-								className={!post.image.effect && 'no-effect'}
+								className={post.image.effect === false ? 'no-effect' : ''}
 								key={post.image.url}
 								priority={true}
 								layout={'responsive'}
