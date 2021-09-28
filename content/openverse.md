@@ -14,6 +14,6 @@ image:
 
 Openverse is a search engine for openly-licensed media. This includes over 500 million Creative Commons licensed images and is being expanded to support audio and video. Openverse is part of WordPress: the global, open-source project powering over 43% of the web.
 
-I lead a team of developers and desigers at Automattic whose job is to support the project through full-time contributions, as part of the [Five for the Future](https://wordpress.org/five-for-the-future/) initiative.
+I lead a team of developers and designers at Automattic whose job is to support the project through full-time contributions, as part of the [Five for the Future](https://wordpress.org/five-for-the-future/) initiative.
 
 Openverse began its life as CC Search, and would not be possible without the intellectual curiosity and commitment of many wonderful current and past employees of Creative Commons.
