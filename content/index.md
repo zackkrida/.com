@@ -1,9 +1,9 @@
 ---
-title: 'zack krida'
+title: 'zack'
 date: '2020-03-16T05:35:07.322Z'
 excerpt: 'the homepage of zack.cat'
 author:
-  name: zack krida
+  name: zack
   picture: '/assets/zack.jpg'
 image:
   url: '04780020.jpg'
@@ -18,4 +18,4 @@ I currently lead the [Openverse](/openverse) team at [Automattic](https://automa
 
 Previously I wrote more open source software at [Creative Commons](https://creativecommons.org), an international nonprofit organization dedicated to building and sustaining a thriving commons of shared knowledge and culture.
 
-Before that I worked as a consultant and contributor on various pieces of software at small startups and agencies. I'll write more about that soon.
+Before that I worked as a consultant and contributor on various pieces of software at small startups and agencies. I'll write more about that someday.

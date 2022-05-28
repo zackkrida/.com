@@ -3,7 +3,7 @@ title: 'winnie'
 excerpt: '<3'
 date: '2020-03-16T05:35:07.322Z'
 author:
-  name: zack krida
+  name: zack
   picture: '/assets/zack.jpg'
 image:
   url: 'winnie-hydra.jpg'
