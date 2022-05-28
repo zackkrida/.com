@@ -143,6 +143,10 @@ summary:hover {
 	text-decoration: underline;
 }
 
+button {
+	color: currentColor;
+}
+
 button:focus,
 button:hover {
 	box-shadow: 7px 4px 11px red, -7px -6px 11px olive;
