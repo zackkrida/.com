@@ -3,7 +3,7 @@ title: 'Openverse'
 excerpt: 'Openverse is a search engine for openly-licensed (mostly CC licensed) media that I help build at Automattic.'
 date: '2020-03-16T05:35:07.322Z'
 author:
-  name: zack krida
+  name: zack
   picture: '/assets/zack.jpg'
 image:
   url: 'openverse-loading.gif'

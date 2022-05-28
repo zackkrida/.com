@@ -35,7 +35,7 @@ img.no-effect {
 	}
 }
 
-/*  
+/*
 	Links are wrapped in brackets—"{}" for internal links and "[]" for external
 */
 
@@ -113,4 +113,46 @@ footer {
 }
 details summary::-webkit-details-marker {
 	display: none;
+}
+
+canvas {
+	background-color: #808a80;
+	width: 100%;
+}
+
+.aspect-4-3 {
+	aspect-ratio: 16 / 9;
+}
+
+button {
+	appearance: none;
+	background-color: transparent;
+	border: 2px solid currentcolor;
+	border-radius: 3px;
+	padding: 8px;
+	font-weight: bold;
+	font-family: monospace;
+}
+
+a:focus,
+a:hover,
+summary:focus,
+summary:hover {
+	outline: none;
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+button:focus,
+button:hover {
+	box-shadow: 7px 4px 11px red, -7px -6px 11px olive;
+	outline: none;
+	cursor: pointer;
+	border-radius: 2px;
+}
+
+.split {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
