@@ -73,15 +73,14 @@ export default function Post({ post, posts }) {
 							/>
 						)}
 
-						<Link href="/">
-							<a
-								className="small"
-								style={{
-									visibility: post.slug !== 'index' ? 'initial' : 'hidden',
-								}}
-							>
-								return home
-							</a>
+						<Link
+							href="/"
+							className="small"
+							style={{
+								visibility: post.slug !== 'index' ? 'initial' : 'hidden',
+							}}
+						>
+							return home
 						</Link>
 						<h1 className="split">
 							{post.title}
@@ -111,9 +110,7 @@ export default function Post({ post, posts }) {
 											.filter((i) => i.slug !== 'index')
 											.map((i) => (
 												<li key={i.slug}>
-													<Link href={`/${i.slug}`}>
-														<a>{i.title}</a>
-													</Link>
+													<Link href={`/${i.slug}`}>{i.title}</Link>
 												</li>
 											))}
 									</ul>
