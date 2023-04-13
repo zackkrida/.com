@@ -160,3 +160,11 @@ button:hover {
 	justify-content: space-between;
 	align-items: center;
 }
+
+.w-full {
+	width: 100%;
+}
+
+.h-auto {
+	height: auto;
+}

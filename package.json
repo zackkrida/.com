@@ -19,11 +19,6 @@
 		"remark-react": "^9.0.1",
 		"unified": "^10.1.2"
 	},
-	"devDependencies": {
-		"autoprefixer": "^10.3.1",
-		"postcss": "^8.3.6",
-		"tailwindcss": "^3.3.1"
-	},
 	"license": "MIT",
 	"volta": {
 		"node": "18.15.0"

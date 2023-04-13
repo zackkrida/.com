@@ -1,19 +1,19 @@
 import { useRouter } from 'next/router'
 import ErrorPage from 'next/error'
-import dynamic from 'next/dynamic'
 import Head from 'next/head'
 import { getPostBySlug, getAllPosts } from 'lib/api'
 import markdownToHtml from 'lib/markdownToHtml'
 import Link from 'next/link'
 import Image from 'next/image'
 import { useEffect, useRef, useState } from 'react'
+import classNames from 'classnames'
 
 export default function Post({ post, posts }) {
 	const router = useRouter()
 	const canvas = useRef(null)
 	const [showMirror, setShowMirror] = useState(false)
 
-	useEffect(async () => {
+	async function setupCanvas() {
 		if (!showMirror) return
 
 		const REGL = (await import('regl')).default
@@ -26,8 +26,8 @@ export default function Post({ post, posts }) {
 		const hydra = new Hydra({ regl, width: 1600, height: 900 })
 		const { loop, sources, outputs } = hydra
 		const time = hydra.synth.time
-		const [s0, s1, s2, s3] = sources
-		const [o0, o1, o2, o3] = outputs
+		const [s0] = sources
+		const [o0] = outputs
 
 		loop.start()
 		s0.initCam()
@@ -38,12 +38,17 @@ export default function Post({ post, posts }) {
 			.modulateScale(osc(1, 0, 1), -0.03)
 			.scale(1, () => 1.05 + 0.1 * Math.sin(0.2 * time))
 			.out(hydra.output)
+	}
+
+	useEffect(() => {
+		setupCanvas()
 	}, [showMirror])
 
 	if (!router.isFallback && !post?.slug) {
 		return <ErrorPage statusCode={404} />
 	}
 
+	const title = `${post.title} ~ zack.cat`
 	const content = markdownToHtml(post.content || '')
 
 	return (
@@ -54,7 +59,7 @@ export default function Post({ post, posts }) {
 				<>
 					<article className="content">
 						<Head>
-							<title>{post.title} ~ zack.cat</title>
+							<title>{title}</title>
 							{/* <meta property="og:image" content={post.ogImage.url} /> */}
 						</Head>
 
@@ -62,14 +67,17 @@ export default function Post({ post, posts }) {
 
 						{post.image && !showMirror && (
 							<Image
-								className={post.image.effect === false ? 'no-effect' : ''}
 								key={post.image.url}
 								priority={true}
-								layout={'responsive'}
 								width={post.image.width}
 								height={post.image.height}
 								src={`/images/${post.image.url}`}
 								alt={post.image.alt}
+								className={classNames(
+									'w-full',
+									'h-auto',
+									post.image.effect === false ? 'no-effect' : '',
+								)}
 							/>
 						)}
 
